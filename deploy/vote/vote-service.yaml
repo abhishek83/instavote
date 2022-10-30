@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: vote
+    tier: front
   name: vote
 spec:
   ports:
@@ -14,4 +15,5 @@ spec:
     targetPort: 80
   selector:
     app: vote
+    tier: front
   type: NodePort
